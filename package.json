@@ -1,0 +1,51 @@
+{
+  "name": "miss-groupie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -r dotenv/config src/index.js",
+    "prod": "NODE_ENV=production nodemon -r dotenv/config src/index.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "start": "node src/index.js",
+    "test": "npm run lint && nyc --reporter=html --reporter=text mocha",
+    "knex:migrate": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:latest",
+    "knex:migrate:make": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:make $1",
+    "knex:migrate:down": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatagoodbot/bot-miss-groupie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whatagoodbot/bot-miss-groupie/issues"
+  },
+  "homepage": "https://github.com/whatagoodbot/bot-miss-groupie#readme",
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.2",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "nyc": "^15.1.0",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "@whatagoodbot/rpc": "^1.0.6",
+    "hot-shots": "^9.2.0",
+    "knex": "^2.3.0",
+    "message-broker": "github:whatagoodbot/message-broker#v3.0.0",
+    "mysql": "^2.18.1",
+    "winston": "^3.8.2",
+    "winston-syslog": "^2.6.0"
+  }
+}

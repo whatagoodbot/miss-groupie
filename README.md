@@ -60,3 +60,8 @@
 ##### favourite
 
 ### Quick Themes
+What are quick themes?
+#### start
+#### stop
+#### current
+#### skip

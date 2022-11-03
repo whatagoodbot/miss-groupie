@@ -16,7 +16,7 @@ Grab the URL for the room that you'd like the bot in and drop me a [message](#Ho
 At the moment, configuration options are limited and cannot be adjusted by users. Currently, only the following can be configured per room;
 - [Last FM scrobbling account](#scrobbling)
 - Name of Spotify Playlist for [⭐️ _starred_ ⭐️](#Starring) tracks
-- Command Identifiers. Miss Groupie will always listen to `!`, but can also listen to other characters of your choosing (if you add a new identifier, you can substitue it everywhere in this document that you see `!`).
+- Command Identifiers. Miss Groupie will always listen to `!` and `/`, but can also listen to other characters of your choosing (if you add a new identifier, you can substitue it everywhere in this document that you see `!`).
 If you want to make any changes to these, send me a [message](#How-do-I-contact-you-to-ask-questions-or-make-requests?)
 ## Features
 The current features are listed below. You'll notice a few have a temporary ***[DISABLED]*** flag against them. These are features with current issues that will be resolved shortly and the flag then removed.

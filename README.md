@@ -7,9 +7,11 @@ You can find me on the normal discord servers or in the listening apps (where el
   
 ## Getting started
 **Getting the bot into your room**
+
 Grab the URL for the room that you'd like the bot in and drop me a [message](#How-do-I-contact-you-to-ask-questions-or-make-requests?) with that URL. 
 
 **Once the bot is in your room**
+
 `!help` is your friend and lists the built in commands. You should also look at [aliases](#Seeing-available-aliases).
 
 ## Configuration
@@ -24,32 +26,46 @@ The current features are listed below. You'll notice a few have a temporary ***[
 Aliases are your own custom commands - Miss Groupie will accept your command and respond with either some text, or an image (flat image or animated gif)
 
 **Seeing available aliases**
+
 To see all available aliases, which include global alises and room specific aliases, use `!aliases`
 
 **Creating an alias**
-To add an alias, you need the name for the alias and the reponse to provide, along with specifiying if it is an image or a text response.
 
-To add a text based reponse `!alias {NAME} text {TEXT TO RESPOND WITH}` for example `!alias hi text hello there` will mean anyone entering `!hi` will be met with a response of *"hello there"*
+To add an alias, you need the name for the alias and the reponse to provide.
 
-To add an image based reponse `!alias {NAME} image {URL TO IMAGE}` for example `!alias hi image https://media.giphy.com/media/QLKSt3wQqlj7a/giphy.gif` will mean anyone entering `!hi` will be met with a gif of Forest Gump waving.
+To add a text based reponse `!alias {NAME} {TEXT TO RESPOND WITH}` for example `!alias hi hello there` will mean anyone entering `!hi` will be met with a response of *"hello there"*
+
+To add an image based reponse `!alias {NAME} {URL TO IMAGE}` for example `!alias hi https://media.giphy.com/media/QLKSt3wQqlj7a/giphy.gif` will mean anyone entering `!hi` will be met with a gif of Forest Gump waving.
+
+You can combine text and images using `!alias {NAME} {TEXT TO RESPOND WITH} {URL TO IMAGE}` for example `!alias hi hello there https://media.giphy.com/media/QLKSt3wQqlj7a/giphy.gif` will mean anyone entering `!hi` will be met with a message saying "hello there" and a gif of Forest Gump waving.
 
 ### Greetings
 Miss Groupie will greet you when you join a room. You'll only be greeted once every 10 minutes, so that when you're having systems issues and are frequently disconnecting and reconnecting (bouncing), you won't be greeted over and over.
 
 **User Greeting**
-Each user can have their own custom greeting in your room. Miss Groupie stores as many greetings as you like and will pick one at random each time a user joins the room. 
-You can have both text and image greetings. If a user has both a text and an image greeting, a random choice of each will be used to gree the joining user.
- 
-To add a text based greeting `!addusergreeting @{USERNAME} text {TEXT TO GREET WITH}` for example `!addusergreeting @notABluesSinger text Blame him for everything I say` will mean when I join the room, I will be greeted with *"Blame him for everything I say"*
 
-To add an image base greeting `!addusergreeting @{USERNAME} image {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger image https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room everyone will be treated to a gif of Lisa Simpson playing the blues.
+Each user can have their own custom greeting in your room. Miss Groupie stores as many greetings as you like and will pick one at random each time a user joins the room. 
+You can have both text and image greetings. If a user has both a text and an image greeting, a random choice of each will be used to greet the joining user.
+ 
+To add a text based greeting `!addusergreeting @{USERNAME} {TEXT TO GREET WITH}` for example `!addusergreeting @notABluesSinger Blame him for everything I say` will mean when I join the room, I will be greeted with *"Blame him for everything I say"*
+
+To add an image base greeting `!addusergreeting @{USERNAME} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room everyone will be treated to a gif of Lisa Simpson playing the blues.
+
+You can combine text and images using `!addusergreeting @{USERNAME} {TEXT TO GREET WITH} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger Blame him for everything I say https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room I will be greeted with *"Blame him for everything I say"* and everyone will be treated to a gif of Lisa Simpson playing the blues.
 
 **Room Greeting**
+
 You can specify a particular greeting for the room. This will show each and every time a user joins the room as well as their user greeting. This could be useful to let people know the kind of music the room plays or any community rules that are enforced.
 
-To add a text based greeting `!addroomgreeting text {TEXT TO GREET WITH}` for example `!addroomgreeting text Please be nice to cats` will mean when anyone joins the room, after any greeting Miss Groupie will also say *"Please be nice to cats"*
+To add a text based greeting `!addroomgreeting {TEXT TO GREET WITH}` for example `!addroomgreeting Please be nice to cats` will mean when anyone joins the room, after any greeting Miss Groupie will also say *"Please be nice to cats"*
 
-To add an image base greeting `!addroomgreeting image {URL TO IMAGE}` for example `!addroomgreeting image https://media.giphy.com/media/l0MYGb1LuZ3n7dRnO/giphy.gif` will mean after a user is greeted they'll be shown a nice gif of John McClane.
+To add an image base greeting `!addroomgreeting {URL TO IMAGE}` for example `!addroomgreeting Please be nice to cats https://media.giphy.com/media/l0MYGb1LuZ3n7dRnO/giphy.gif` will mean after a user is greeted they'll be shown a nice gif of John McClane.
+
+You can combine text and images using `!addroomgreeting {TEXT TO GREET WITH} {URL TO IMAGE}` for example `!addroomgreeting https://media.giphy.com/media/l0MYGb1LuZ3n7dRnO/giphy.gif` will mean after a user is greeted they'll be shown a message saying  *"Please be nice to cats"* as well as a nice gif of John McClane.
+
+**Clearing room greetings**
+
+Some rooms use room greetings to inform of time based events - so collecting a bunch of greetings to show randomly isn't helpful. If you need to clear down all room greetings you can use `!deleteroomgreetings` and all greetings will be deleted.
 
 ### Image Functions
 #### Random Images
@@ -60,6 +76,7 @@ There are a number of features that will return a random image - these use 3rd p
 
 #### giphy
 `!giphy {search term}` will return whatever giphy comes back with for the search term. For example `!giphy cactus` should give you a normal cactus - but it's giphy, so YMMV.
+
 #### dalle ***[DISABLED]***
 *Temporarily disabled due to different clients handling image responses differently.*
 Uses [craiyon.com](https://www.craiyon.com/)'s API to send in your text and generates an AI image. This service can take up to 2 minutes to generate your image, so it will return a holding message while the generation takes place.
@@ -96,12 +113,15 @@ Not all clients support voting - if the client supports up voting, down voting a
 If you're client doesn't support these features you can manually trigger a vote with the use of emojis.
 
 **Upvote**
+
 While a track is playing simply send a message containing _only_ a 👍
 
 **Downvote**
+
 While a track is playing simply send a message containing _only_ a 👎
 
 **Starring**
+
 While a track is playing simply send a message containing _only_ a ⭐️
 
 ### Statistics
@@ -110,6 +130,7 @@ All of the below options will default to displaying statistics for the current m
 - `!leaderboard`
 - `!leaderboard lastmonth`
 - `!leaderboard alltime`
+
 #### Room based
 - `!leaderboard` will show a leaderboard of users based on the votes that they have received. Scored as 
 	- 2 points for ⭐️

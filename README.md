@@ -169,7 +169,7 @@ Need a dice rolled - use `!dice`. You can also specify the number of dice and la
 
 ### Magic 8 Ball
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
-Need to ask a magic 8 ball a question - `!magic8ball` will help you out
+Need to ask a magic 8 ball a question - `!magic8ball {QUESTION}` will help you out. e.g. `!magic8ball is groupie a good robot?`
 
 ### Urban Disctionary
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.

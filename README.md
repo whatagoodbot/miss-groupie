@@ -162,3 +162,15 @@ To control quick themes, the following commands are available;
 - `!stop` will stop a quick themes session - this will stop straight away
 - `!current` will confirm the current theme details, leader, caboose and next theme.
 - `!skip` will skip the theme that is queued to be next.
+
+### Dice
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+Need a dice rolled - use `!dice`. You can also specify the number of dice and largest number on each using `!dice 1d10`, where 1 is the number of dice and 10 is the largest number.
+
+### Magic 8 Ball
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+Need to ask a magic 8 ball a question - `!magic8ball` will help you out
+
+### Urban Disctionary
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+Not sure what a phrase means - look it up on the urba dictionary using `1urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors

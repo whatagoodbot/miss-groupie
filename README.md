@@ -105,7 +105,7 @@ Based on the song currently playing, the following features are available.
 - `!relink` Can't hear the song playing - `!relink` will check with Spotify which countries the current track is available in and let you know if there are any limitations.
 - `!yt` If the current track playing isn't available (or you just want to watch the video of it) `!yt` will give you a link to the track on youtube (with a thumbnail image)
 - `!genre` will return the genres that Spotify holds for this track
-- `!artist`  ***[DISABLED]*** will provide a small bio about the artist weho performed the track.
+- `!artist` will provide a small bio about the artist weho performed the track.
 - `!album` ***[DISABLED]***  will provide some information about the album the track is from.
 
 ### Voting
@@ -151,7 +151,11 @@ All of the below options will default to displaying statistics for the current m
 - `!myfavourite` will tell you which song got the highest score
 - `!mystats` will summarise all of the above into a single message
 
-### Quick Themes ***[DISABLED]*** 
+#### Track based
+ - `!first` will tell you when and who played the track first (only across rooms the bot is in, which is about 20 rooms)
+ - `!roomfirst` will tell you when and who played the track first in the current room
+
+### Quick Themes 
 Quick themes is a function that will pick a random theme from a database of hundreds and communicate that with the room, with the idea being that people play songs related to the theme. 
 Automatically, one user is picked as the first person to start the theme (the leader 🚂) and one is the last person (the caboose 🚃) on which the theme will switch to the next theme. Miss Groupie will take care of DJs leaving and joining and adjust start and end points. 
 While a theme is in play, votes will be tracked against the theme and at the end of each theme a winner will be announced for that round.

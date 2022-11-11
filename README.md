@@ -162,10 +162,12 @@ While a theme is in play, votes will be tracked against the theme and at the end
 Miss Groupie will tell you at appropriate times what the curren theme is and who is leader and caboose, as well as the next theme coming up, so that you can prepare your next spin.
 
 To control quick themes, the following commands are available;
-- `!start` to begin a quick themes session - this will wait until you've looped back to the chosen leader before begining
-- `!stop` will stop a quick themes session - this will stop straight away
-- `!current` will confirm the current theme details, leader, caboose and next theme.
-- `!skip` will skip the theme that is queued to be next.
+- `!qt start` to begin a quick themes session - this will wait until you've looped back to the chosen leader before begining
+- `!qt stop` will stop a quick themes session - this will stop straight away
+- `!qt current` will confirm the current theme details, leader, caboose and next theme.
+- `!qt skip` will skip the theme that is queued to be next.
+- `!qt leaderboard` will give you a leaderbaord, up to 5 DJs for the quick themes session
+- `!qt currentleaderboard` will show a leaderboard, up to 5 DJs for the quick theme in play
 
 ### Dice
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.

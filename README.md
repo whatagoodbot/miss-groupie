@@ -122,7 +122,7 @@ While a track is playing simply send a message containing _only_ a 👎
 
 **Starring**
 
-While a track is playing simply send a message containing _only_ a ⭐️
+While a track is playing simply send a message containing _only_ a ⭐️ (also supports 🌟 & * - just the asterix above the 8 key)
 
 ### Statistics
 A bunch of data gets collected when songs play or users vote - these can be used to view interesting statistics. They can be individual for the user, or grouped for the room.

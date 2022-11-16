@@ -114,15 +114,16 @@ If you're client doesn't support these features you can manually trigger a vote 
 
 **Upvote**
 
-While a track is playing simply send a message containing _only_ a 👍
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a 👍 while a track is playing 
 
 **Downvote**
 
-While a track is playing simply send a message containing _only_ a 👎
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a 👎 while a track is playing 
 
 **Starring**
 
-While a track is playing simply send a message containing _only_ a ⭐️ (also supports 🌟 & * - just the asterix above the 8 key)
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a ⭐️ (also supports 🌟 & * - just the asterix above the 8 key)
+ while a track is playing 
 
 ### Statistics
 A bunch of data gets collected when songs play or users vote - these can be used to view interesting statistics. They can be individual for the user, or grouped for the room.

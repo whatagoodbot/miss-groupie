@@ -141,7 +141,7 @@ All of the below options will default to displaying statistics for the current m
 - `!roomdopes` will tell you how many dopes (or 👍) given in the room
 - `!roomnopes` will tell you how many nopes (or 👎) given in the room
 - `!roomstars` will tell you how many stars (or ⭐️) given in the room
-- `!roomfavourite` will tell you which song got the highest score
+- `!roommostpopular` will tell you which song got the highest score
 - `!roomstats` will summarise all of the above into a single message
 
 #### User based
@@ -149,7 +149,7 @@ All of the below options will default to displaying statistics for the current m
 - `!mydopes` will tell you how many dopes (or 👍) given in the room
 - `!mynopes` will tell you how many nopes (or 👎) given in the room
 - `!mystars` will tell you how many stars (or ⭐️) given in the room
-- `!myfavourite` will tell you which song got the highest score
+- `!mymostpopular` will tell you which song got the highest score
 - `!mystats` will summarise all of the above into a single message
 
 #### Track based

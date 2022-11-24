@@ -48,7 +48,6 @@ You can combine text and images using `!alias {NAME} {TEXT TO RESPOND WITH} {URL
 
 If you need to clear down all responses against an alias you can use `!deletealias {NAME}` for example `!deletealias hi` will remove all of the `!hi` aliases, created in the above example.
 
-
 ### Greetings
 Miss Groupie will greet you when you join a room. You'll only be greeted once every 10 minutes, so that when you're having systems issues and are frequently disconnecting and reconnecting (bouncing), you won't be greeted over and over.
 
@@ -131,15 +130,16 @@ If you're client doesn't support these features you can manually trigger a vote 
 
 **Upvote**
 
-While a track is playing simply send a message containing _only_ a 👍
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a 👍 while a track is playing 
 
 **Downvote**
 
-While a track is playing simply send a message containing _only_ a 👎
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a 👎 while a track is playing 
 
 **Starring**
 
-While a track is playing simply send a message containing _only_ a ⭐️ (also supports 🌟 & * - just the asterix above the 8 key)
+Native voting is supported in all clients that provide it. For those that don't you can simply send a message containing _only_ a ⭐️ (also supports 🌟 & * - just the asterix above the 8 key)
+ while a track is playing 
 
 ### Statistics
 A bunch of data gets collected when songs play or users vote - these can be used to view interesting statistics. They can be individual for the user, or grouped for the room.
@@ -157,7 +157,7 @@ All of the below options will default to displaying statistics for the current m
 - `!roomdopes` will tell you how many dopes (or 👍) given in the room
 - `!roomnopes` will tell you how many nopes (or 👎) given in the room
 - `!roomstars` will tell you how many stars (or ⭐️) given in the room
-- `!roomfavourite` will tell you which song got the highest score
+- `!roommostpopular` will tell you which song got the highest score
 - `!roomstats` will summarise all of the above into a single message
 
 #### User based
@@ -165,7 +165,7 @@ All of the below options will default to displaying statistics for the current m
 - `!mydopes` will tell you how many dopes (or 👍) given in the room
 - `!mynopes` will tell you how many nopes (or 👎) given in the room
 - `!mystars` will tell you how many stars (or ⭐️) given in the room
-- `!myfavourite` will tell you which song got the highest score
+- `!mymostpopular` will tell you which song got the highest score
 - `!mystats` will summarise all of the above into a single message
 
 #### Track based
@@ -203,4 +203,4 @@ Need to ask a magic 8 ball a question - `!magic8ball {QUESTION}` will help you o
 
 ### Urban Disctionary
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
-Not sure what a phrase means - look it up on the urba dictionary using `1urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors
+Not sure what a phrase means - look it up on the urba dictionary using `!urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors

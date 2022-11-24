@@ -40,4 +40,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: whatagoodbot/bot-miss-groupie:latest,whatagoodbot/bot-miss-groupie:1.0.0
+          tags: whatagoodbot/bot-miss-groupie:4.0.0

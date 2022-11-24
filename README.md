@@ -22,6 +22,11 @@ At the moment, configuration options are limited and cannot be adjusted by users
 If you want to make any changes to these, send me a [message](#How-do-I-contact-you-to-ask-questions-or-make-requests?)
 ## Features
 The current features are listed below. You'll notice a few have a temporary ***[DISABLED]*** flag against them. These are features with current issues that will be resolved shortly and the flag then removed.
+
+### Room Helpers
+- `!lastfm` will give users a link to the rooms last.fm account, if configured
+- `!playlist` will ink people off to the [⭐️ _starred_ ⭐️](#Starring) playlist, if configured
+
 ### Aliases
 Aliases are your own custom commands - Miss Groupie will accept your command and respond with either some text, or an image (flat image or animated gif)
 
@@ -39,6 +44,10 @@ To add an image based reponse `!alias {NAME} {URL TO IMAGE}` for example `!alias
 
 You can combine text and images using `!alias {NAME} {TEXT TO RESPOND WITH} {URL TO IMAGE}` for example `!alias hi hello there https://media.giphy.com/media/QLKSt3wQqlj7a/giphy.gif` will mean anyone entering `!hi` will be met with a message saying "hello there" and a gif of Forest Gump waving.
 
+**Clearing an alias**
+
+If you need to clear down all responses against an alias you can use `!deletealias {NAME}` for example `!deletealias hi` will remove all of the `!hi` aliases, created in the above example.
+
 ### Greetings
 Miss Groupie will greet you when you join a room. You'll only be greeted once every 10 minutes, so that when you're having systems issues and are frequently disconnecting and reconnecting (bouncing), you won't be greeted over and over.
 
@@ -52,6 +61,10 @@ To add a text based greeting `!addusergreeting @{USERNAME} {TEXT TO GREET WITH}`
 To add an image base greeting `!addusergreeting @{USERNAME} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room everyone will be treated to a gif of Lisa Simpson playing the blues.
 
 You can combine text and images using `!addusergreeting @{USERNAME} {TEXT TO GREET WITH} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger Blame him for everything I say https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room I will be greeted with *"Blame him for everything I say"* and everyone will be treated to a gif of Lisa Simpson playing the blues.
+
+**Clearing a user greeting**
+
+If you need to clear down all greetings for a specific user you can use `!deleteusergreeting @{USERNAME}` for example `!deleteusergreeting @notABluesSinger` will remove all user greetings for my user.
 
 **Room Greeting**
 
@@ -81,6 +94,9 @@ There are a number of features that will return a random image - these use 3rd p
 *Temporarily disabled due to different clients handling image responses differently.*
 Uses [craiyon.com](https://www.craiyon.com/)'s API to send in your text and generates an AI image. This service can take up to 2 minutes to generate your image, so it will return a holding message while the generation takes place.
 To use, simply add your query after the command: `!dalle dancing cheese straws` and you'll get some kind of AI driven image of some cheese straws, dancing.
+
+#### inspiro bot
+`!inspire` will show you a unique inspirational quote & accompanying image
 
 ### Jokes
 - `!dadjoke` will return a random Dad joke
@@ -178,6 +194,13 @@ Need a dice rolled - use `!dice`. You can also specify the number of dice and la
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
 Need to ask a magic 8 ball a question - `!magic8ball {QUESTION}` will help you out. e.g. `!magic8ball is groupie a good robot?`
 
+### Simple text based responses
+- `!corporatebs` will return you the perfect corporate BS talk
+- `!fact` will give you a random fact
+- `!fortune` will show you a random fortune - like from a fortune cookie
+- `!meowfact` give you a fact about cats
+- `!thatreally` gives you a random variation on the phrase "that really grinds my gears"
+
 ### Urban Disctionary
 Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
-Not sure what a phrase means - look it up on the urba dictionary using `1urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors
+Not sure what a phrase means - look it up on the urba dictionary using `!urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors

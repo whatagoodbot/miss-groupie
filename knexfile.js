@@ -2,10 +2,10 @@ export default {
   development: {
     client: 'mysql',
     connection: {
-      host: process.env.DB_HOST,
-      database: 'missGroupie',
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
+      host: process.env.HOST_TOOL_DB,
+      database: process.env.DATABASE_BOT_GROUPIE,
+      user: process.env.USERNAME_TOOL_DB,
+      password: process.env.PASSWORD_TOOL_DB,
       charset: 'utf8mb4'
     },
     migrations: {
@@ -19,10 +19,10 @@ export default {
   production: {
     client: 'mysql',
     connection: {
-      host: process.env.DB_HOST_PRODUCTION,
-      database: 'missGroupie',
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
+      host: process.env.HOST_TOOL_DB,
+      database: process.env.DATABASE_BOT_GROUPIE,
+      user: process.env.USERNAME_TOOL_DB,
+      password: process.env.PASSWORD_TOOL_DB,
       charset: 'utf8mb4'
     },
     migrations: {

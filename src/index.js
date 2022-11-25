@@ -1,57 +1,11 @@
-import WebSocket, { WebSocketServer } from 'ws'
-import { v4 as uuidv4 } from 'uuid'
 import broker from '@whatagoodbot/mqtt'
 import { server, serverCreds, strings, commands, rooms } from '@whatagoodbot/rpc'
 import { logger, metrics } from '@whatagoodbot/utilities'
 import { performance } from 'perf_hooks'
 import { getString, getManyStrings, getAllStrings } from './controllers/rpc/strings.js'
 import { getCommand, getAllCommands } from './controllers/rpc/commands.js'
-import { getRoom, getRooms, getRoomsFromDb } from './controllers/rpc/rooms.js'
+import { getRoom, getRooms } from './controllers/rpc/rooms.js'
 import controllers from './controllers/mqtt/index.js'
-import { userConnected } from './controllers/mqtt/userConnect.js'
-import { userDisconnected } from './controllers/mqtt/userDisconnect.js'
-import express from 'express'
-
-const wss = new WebSocketServer({ port: 8080 })
-wss.on('connection', ws => {
-  ws.id = uuidv4()
-  console.log('Client Connected', ws.id)
-})
-
-const statistics = {
-  rooms: {}
-}
-
-const dbRooms = await getRoomsFromDb()
-dbRooms.forEach(room => {
-  statistics.rooms[room.id] = statistics.rooms[room.id] || {}
-  statistics.rooms[room.id].name = room.name
-  statistics.rooms[room.id].users = []
-})
-
-userConnected.on('message', payload => {
-  statistics.rooms[payload.room.id].users.push(payload.user)
-  updateClient()
-})
-
-userDisconnected.on('message', payload => {
-  statistics.rooms[payload.room.id].users = statistics.rooms[payload.room.id].users.filter(user => user.id !== payload.user.id)
-  updateClient()
-})
-
-const updateClient = () => {
-  wss.clients.forEach(function each (client) {
-    console.log(client.readyState)
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(JSON.stringify(statistics.rooms))
-    }
-  })
-}
-
-const app = express()
-
-app.use(express.static('./web/build'))
-app.listen(80)
 
 const topicPrefix = `${process.env.NODE_ENV}/`
 

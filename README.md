@@ -169,6 +169,7 @@ All of the below options will default to displaying statistics for the current m
 - `!mystars` will tell you how many stars (or ⭐️) given in the room
 - `!mymostpopular` will tell you which song got the highest score
 - `!mystats` will summarise all of the above into a single message
+- `!myscore` will give you your score in case you don't show up on the leaderboard - so that you know how far of the top 5 you are
 
 #### Track based
  - `!first` will tell you when and who played the track first (only across rooms the bot is in, which is about 20 rooms)

@@ -55,16 +55,18 @@ Miss Groupie will greet you when you join a room. You'll only be greeted once ev
 
 Each user can have their own custom greeting in your room. Miss Groupie stores as many greetings as you like and will pick one at random each time a user joins the room. 
 You can have both text and image greetings. If a user has both a text and an image greeting, a random choice of each will be used to greet the joining user.
+
+**_YOU CAN ONLY ADD GREETINGS FOR YOURSELF_**
  
-To add a text based greeting `!addusergreeting @{USERNAME} {TEXT TO GREET WITH}` for example `!addusergreeting @notABluesSinger Blame him for everything I say` will mean when I join the room, I will be greeted with *"Blame him for everything I say"*
+To add a text based greeting `!addusergreeting {TEXT TO GREET WITH}` for example `!addusergreeting Blame him for everything I say` will mean when I join the room, I will be greeted with *"Blame him for everything I say"*
 
-To add an image base greeting `!addusergreeting @{USERNAME} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room everyone will be treated to a gif of Lisa Simpson playing the blues.
+To add an image base greeting `!addusergreeting {URL TO IMAGE}` for example `!addusergreeting https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room everyone will be treated to a gif of Lisa Simpson playing the blues.
 
-You can combine text and images using `!addusergreeting @{USERNAME} {TEXT TO GREET WITH} {URL TO IMAGE}` for example `!addusergreeting @notABluesSinger Blame him for everything I say https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room I will be greeted with *"Blame him for everything I say"* and everyone will be treated to a gif of Lisa Simpson playing the blues.
+You can combine text and images using `!addusergreeting {TEXT TO GREET WITH} {URL TO IMAGE}` for example `!addusergreeting Blame him for everything I say https://media.giphy.com/media/xT5LMwPeFtqewwZbWM/giphy.gif` will mean when I join a room I will be greeted with *"Blame him for everything I say"* and everyone will be treated to a gif of Lisa Simpson playing the blues.
 
 **Clearing a user greeting**
 
-If you need to clear down all greetings for a specific user you can use `!deleteusergreeting @{USERNAME}` for example `!deleteusergreeting @notABluesSinger` will remove all user greetings for my user.
+If you need to clear down all greetings for yourself you can use `!deleteusergreetings` for example `!deleteusergreetings` will remove all user greetings for my user.
 
 **Room Greeting**
 
@@ -186,12 +188,16 @@ To control quick themes, the following commands are available;
 - `!qt leaderboard` will give you a leaderbaord, up to 5 DJs for the quick themes session
 - `!qt currentleaderboard` will show a leaderboard, up to 5 DJs for the quick theme in play
 
+### Compliments
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) for this feature.
+Why not make another listener feel good about themselves - send them a random compliment using `!compliment @{USERNAME}`. e.g. `!compliment @{notABluesSinger}` will be kind to me :)
+
 ### Dice
-Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) for this feature.
 Need a dice rolled - use `!dice`. You can also specify the number of dice and largest number on each using `!dice 1d10`, where 1 is the number of dice and 10 is the largest number.
 
 ### Magic 8 Ball
-Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) for this feature.
 Need to ask a magic 8 ball a question - `!magic8ball {QUESTION}` will help you out. e.g. `!magic8ball is groupie a good robot?`
 
 ### Simple text based responses
@@ -201,6 +207,10 @@ Need to ask a magic 8 ball a question - `!magic8ball {QUESTION}` will help you o
 - `!meowfact` give you a fact about cats
 - `!thatreally` gives you a random variation on the phrase "that really grinds my gears"
 
-### Urban Disctionary
-Thanks to [@nicolabosco87](https://github.com/nicolabosco87) (Wood in app) for this feature.
+### Urban Dictionary
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) for this feature.
 Not sure what a phrase means - look it up on the urba dictionary using `!urban {PHRASE}`, e.g. `!urban rock` and you can learn about rock, paper, scissors
+
+### Zen
+Thanks to [@nicolabosco87](https://github.com/nicolabosco87) for this feature.
+Do you need some inspiration and a bit of zen? `!zen` will get you an inspirational quote from an infuential figures from history.

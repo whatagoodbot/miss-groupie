@@ -92,8 +92,7 @@ There are a number of features that will return a random image - these use 3rd p
 #### giphy
 `!giphy {search term}` will return whatever giphy comes back with for the search term. For example `!giphy cactus` should give you a normal cactus - but it's giphy, so YMMV.
 
-#### dalle ***[DISABLED]***
-*Temporarily disabled due to different clients handling image responses differently.*
+#### dalle
 Uses [craiyon.com](https://www.craiyon.com/)'s API to send in your text and generates an AI image. This service can take up to 2 minutes to generate your image, so it will return a holding message while the generation takes place.
 To use, simply add your query after the command: `!dalle dancing cheese straws` and you'll get some kind of AI driven image of some cheese straws, dancing.
 

@@ -106,7 +106,7 @@ To use, simply add your query after the command: `!dalle dancing cheese straws` 
 #### Quotes
 Random quotes from random people
 - `!thedonald` Your favourite POTUS said some classic things - _warning_ they might be odd.
-- `!kanye` Also might be weird - but Kanye also has an impressive back catalogue of sayings.
+- **[DISABLED]** `!kanye` Also might be weird - but Kanye also has an impressive back catalogue of sayings.
 
 ### Language
 - `!translate` will try to translate the last message into English
